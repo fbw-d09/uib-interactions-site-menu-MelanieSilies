@@ -1,0 +1,75 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav {
+    background: lightgray;
+    height: 200px;
+    width: 150px;
+}
+
+li {
+    line-height: 50px;
+    align-items: center;
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+li:hover a {
+    color: white;
+}
+
+li:nth-child(1) {
+    border-left: 5px solid blue;
+}
+
+li:nth-child(1):hover {
+    background: blue;
+    animation: hover 1s linear;
+}
+
+li:nth-child(2) {
+    border-left: 5px solid rgb(0, 195, 255);
+}
+li:nth-child(2):hover {
+    background:rgb(0, 195, 255);
+    animation: hover 1s linear;
+}
+
+li:nth-child(3) {
+    border-left: 5px solid rgb(0, 255, 191);
+}
+
+li:nth-child(3):hover {
+    background: rgb(0, 255, 191);
+    animation: hover 1s linear;
+}
+
+li:nth-child(4) {
+    border-left: 5px solid rgb(0, 255, 72);
+    background-size: 0 0;
+}
+
+li:nth-child(4):hover {
+    background:  rgb(0, 255, 72);
+    animation: hover 1s linear;
+}
+
+@keyframes hover {
+    0% 
+    {
+    width:0;
+    }
+
+    100%
+    {
+        width: 100%;
+    }
+}
